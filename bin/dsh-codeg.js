@@ -45,7 +45,10 @@ try {
   process.exit(2)
 }
 
-const cordisYml = path.join(root, 'cordis.yml')
+const cordisYml = path.join(
+  root,
+  process.platform === 'win32' ? 'cordis.windows.yml' : 'cordis.yml'
+)
 const child = spawn(process.execPath, [bin, '-c', cordisYml], {
   cwd: root,
   stdio: 'inherit',

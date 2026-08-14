@@ -13,6 +13,7 @@
   "files": [
     "bin",
     "cordis.yml",
+    "cordis.windows.yml",
     "scripts",
     "codeg-paste.json",
     "codeg-agent.json",
@@ -32,6 +33,8 @@
     "@deepseek-ai/dsh-sandbox-policy": "0.1.0-rc.6",
     "@deepseek-ai/dsh-subprocess-local": "0.1.0-rc.6",
     "@deepseek-ai/dsh-bash-sandbox": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-pwsh-sandbox": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-pwsh-local": "0.1.0-rc.6",
     "@deepseek-ai/dsh-user-approval": "0.1.0-rc.6",
     "@deepseek-ai/dsh-fs-sandbox": "0.1.0-rc.6",
     "@deepseek-ai/dsh-tool-fs": "0.1.0-rc.6",

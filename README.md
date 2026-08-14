@@ -109,3 +109,13 @@ a dummy DEEPSEEK_API_KEY so the wrapper's boot path runs unchanged.
 - **C（补 MCP）**：除非有明确刚需，否则不做。需 vendor `dsh-acp` + `dsh-mcp-client`
   （其 `startConnection` 不导出）+ 用 `dsh-scope` 做 session 级工具隔离，是一个独立工程。
 
+## 平台支持
+
+- **macOS / Linux**：用 `cordis.yml`（bash 执行器）。
+- **Windows**：wrapper 按 `process.platform` 自动选 `cordis.windows.yml`（PowerShell 执行器
+  `dsh-pwsh-sandbox`；沙盒 seam 在 Windows 上自动解析到 ACL 受限令牌链）。
+
+启动层（codeg 的 `resolve_npx_command` + `node_required` 版本检查 + npm 的 `.cmd` shim）三端一致，
+DSH 走 npx 分发，与 Claude/Codex/Gemini 相同。**Windows 的 pwsh 组合尚未在真机验证**，
+需要的 pwsh 依赖（`dsh-pwsh-sandbox` / `dsh-pwsh-local`）已加入 package.json。
+
