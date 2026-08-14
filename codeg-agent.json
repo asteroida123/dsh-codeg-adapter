@@ -1,0 +1,15 @@
+{
+  "id": "dsh-acp",
+  "name": "DeepSeek Harness (DSH)",
+  "description": "DeepSeek Harness coding agent via the automation-only ACP server",
+  "version": "0.1.0-rc.6",
+  "distribution": {
+    "npx": {
+      "package": "dsh-codeg-adapter@0.1.0",
+      "cmd": "dsh-codeg",
+      "args": [],
+      "env": {},
+      "node_required": "20.0.0"
+    }
+  }
+}

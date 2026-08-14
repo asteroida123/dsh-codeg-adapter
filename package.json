@@ -1,0 +1,37 @@
+{
+  "name": "dsh-codeg-adapter",
+  "version": "0.1.0",
+  "description": "Launch DeepSeek Harness (DSH) as an ACP agent for Codeg",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "dsh-codeg": "bin/dsh-codeg.js"
+  },
+  "files": [
+    "bin",
+    "cordis.yml",
+    "scripts",
+    "codeg-paste.json",
+    "codeg-agent.json",
+    ".env.example"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-acp": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-acp-demo": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-llm-deepseek": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-sandbox-local": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-sandbox-policy": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-subprocess-local": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-bash-sandbox": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-user-approval": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-fs-sandbox": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tool-fs": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-fs-observation-policy": "0.1.0-rc.6"
+  }
+}
