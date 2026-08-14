@@ -1,5 +1,5 @@
 {
-  "name": "@asteroida123/dsh-codeg-adapter",
+  "name": "@asteroida/dsh-codeg-adapter",
   "version": "0.1.0",
   "description": "Launch DeepSeek Harness (DSH) as an ACP agent for Codeg",
   "type": "module",
