@@ -16,8 +16,8 @@ DSH already ships a first-party ACP server (@deepseek-ai/dsh-acp) and a ready ap
 Requires Node.js >= 20.
 
 ```sh
-npm install -g dsh-codeg-adapter
-# or, once published: npx dsh-codeg-adapter
+npm install -g @asteroida123/dsh-codeg-adapter
+# or, once published: npx @asteroida123/dsh-codeg-adapter
 ```
 
 Set the key:
@@ -33,13 +33,13 @@ Install dsh-codeg first (global install puts it on PATH; Codeg's launch gate pre
 PATH-resolved command over the npx fallback):
 
 ```sh
-npm install -g dsh-codeg-adapter
+npm install -g @asteroida123/dsh-codeg-adapter
 ```
 
 Then add it as a custom agent. Three equivalent ways:
 
 1. **Form (simplest):** Codeg -> Settings -> Custom Agent -> Add, choose the npx channel and
-   fill in package `dsh-codeg-adapter@0.1.0`, command `dsh-codeg`, args empty, Node >= 20.
+   fill in package `@asteroida123/dsh-codeg-adapter@0.1.0`, command `dsh-codeg`, args empty, Node >= 20.
 2. **Paste JSON:** paste the contents of `codeg-paste.json` (the stored CustomAgentDef shape).
 3. **Registry (after publishing the adapter to the public ACP registry):** pick
    `dsh-acp` from the catalog (see `codeg-agent.json` for the registry-entry shape).

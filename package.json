@@ -1,9 +1,12 @@
 {
-  "name": "dsh-codeg-adapter",
+  "name": "@asteroida123/dsh-codeg-adapter",
   "version": "0.1.0",
   "description": "Launch DeepSeek Harness (DSH) as an ACP agent for Codeg",
   "type": "module",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "dsh-codeg": "bin/dsh-codeg.js"
   },

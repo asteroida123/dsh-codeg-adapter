@@ -5,7 +5,7 @@
   "version": "0.1.0-rc.6",
   "distribution": {
     "npx": {
-      "package": "dsh-codeg-adapter@0.1.0",
+      "package": "@asteroida123/dsh-codeg-adapter@0.1.0",
       "cmd": "dsh-codeg",
       "args": [],
       "env": {},
